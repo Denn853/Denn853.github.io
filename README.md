@@ -7,10 +7,12 @@ Además, vamos a aprovechar apara hablar de Markdowns.
 
 Aquí almacenaremos la página web estática de la asignatura así como algunos ejemplos de Markdowns, CSS, Javascript, etc.
 
-Dos **asteriscos** significa BOLD.
+- Dos **asteriscos** significa BOLD.
 
-Un *asterisco* significa ITALIC.
+- Un *asterisco* significa ITALIC.
 
-Un _guión bajo_ significa también ITALIC.
+- Un _guión bajo_ significa también ITALIC.
 
-Para ***BOLD ITALIC*** tres asteriscos.
+- Para ***BOLD ITALIC*** tres asteriscos.
+
+- Guióin seguido de espacio para hacer un item de list
