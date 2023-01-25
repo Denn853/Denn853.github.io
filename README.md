@@ -15,4 +15,4 @@ Aquí almacenaremos la página web estática de la asignatura así como algunos 
 
 - Para ***BOLD ITALIC*** tres asteriscos.
 
-- Guióin seguido de espacio para hacer un item de list
+- Guióin seguido de espacio para hacer un item de lista.
