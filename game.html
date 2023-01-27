@@ -10,6 +10,18 @@
 		
 		<link rel="stylesheet" href="base.css" />
 		<link rel="stylesheet" href="game.css" />
+		
+		<script>
+			let game_data;
+			
+			function game(data) {
+				game_data = data;
+				document.getElementById("terimal").innerHTML = "<p><strong>¡Bienvenidos a ENTIerrame!</strong> El juego de terror definitivo.</p>";
+				document.getElementById("terimal").innerHTML += "<p>Te encuentras en "+game_data.rooms[0].name+ ", ¿Qué quieres hacer?";
+
+			}
+			fetch("https://denn853.github.io/game.json").then(response => response.json()).then(data => game(data));
+		</script>
 	</head>
 	
 	<body>
