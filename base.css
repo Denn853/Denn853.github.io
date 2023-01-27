@@ -35,6 +35,7 @@ li {
     padding: 0;
     margin: 0 30px;
     justify-content: space-between;
+	align-items: center;
 }
 
 article {

@@ -1,0 +1,42 @@
+{
+	"rooms": [
+		{
+			"id": "parcking",
+			"name": "Parcking de ENTI",
+			"description": "El Parcking que no puedes usar",
+			"items": ["piedra", "bicicleta"],
+			"doors": ["principal", "salida"]
+		}
+	],
+	
+	"items": [
+		{
+			"id": "piedra",
+			"name": "Pedrusco mugroso",
+			"description": "Es una piedra sucia",
+			"pickeable": true
+		},
+		
+		{
+			"id": "bicicleta",
+			"name": "Bicicleta mugrosa",
+			"description": "Algún alumno la abandonó",
+			"pickeable": false
+		}
+	],
+	
+	"doors": [
+		{
+			"id": "principal",
+			"name": "Puerta Principal de ENTI",
+			"description": "Puerta de entrada a ENTI",
+			"rooms": "parking", "hall"
+		},
+		
+		{
+			"id": "salida",
+			"name": "Puerta de Salida",
+			"description": "La salvación",
+		}
+	]
+}
