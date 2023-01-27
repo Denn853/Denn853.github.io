@@ -30,7 +30,7 @@
 			"id": "principal",
 			"name": "Puerta Principal de ENTI",
 			"description": "Puerta de entrada a ENTI",
-			"rooms": "parking", "hall"
+			"rooms": ["parking", "hall"]
 		},
 		
 		{
