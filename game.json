@@ -14,14 +14,14 @@
 			"id": "piedra",
 			"name": "Pedrusco mugroso",
 			"description": "Es una piedra sucia",
-			"pickeable": true
+			"pickable": true
 		},
 		
 		{
 			"id": "bicicleta",
 			"name": "Bicicleta mugrosa",
 			"description": "Algún alumno la abandonó",
-			"pickeable": false
+			"pickable": false
 		}
 	],
 	

@@ -11,7 +11,10 @@
 		<link rel="stylesheet" href="base.css" />
 		
 		<script>
-			fetch("https://denn853.github.io/game.json").then(response => response.json()).then(data => console.log(data));
+			function game(data) {
+				document.getElementById("rooms").json = id:1;
+			}		
+			fetch("https://denn853.github.io/game.json").then(response => response.json()).then(data => game(data));
 		</script>
 		
 	</head>
