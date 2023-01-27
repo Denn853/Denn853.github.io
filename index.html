@@ -12,7 +12,7 @@
 		
 		<script>
 			function game(data) {
-				document.getElementById("rooms").json = id = 1;
+				console.log(data.rooms[0].name);
 			}		
 			fetch("https://denn853.github.io/game.json").then(response => response.json()).then(data => game(data));
 		</script>
