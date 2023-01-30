@@ -7,6 +7,46 @@
 			"items": ["piedra", "bicicleta"],
 			"doors": ["principal", "salida"]
 		}
+		
+		{
+			"id": "secretaria",
+			"name": "Secretaría de ENTI",
+			"description": "La guarderia de los objetos olvidados",
+			"items": ["buf", "llaves"],
+			"doors": ["pasillo", "cantina", "profes"]
+		}
+		
+		{
+			"id": "estudia",
+			"name": "Sala de Estudios de ENTI",
+			"description": "La sala para los Empollones frikis de ENTI",
+			"items": ["reloj", "gafas"],
+			"doors": ["pasillo", "cantina"]
+		}
+		
+		{
+			"id": "cantina",
+			"name": "Cantina de ENTI",
+			"description": "La Cafetería para los pijos",
+			"items": ["vaso_cafe"],
+			"doors": ["pasillo", "estudia", "secretaria", "profes"]
+		}
+		
+		{
+			"id": "profes",
+			"name": "Sala de Profesores de ENTI",
+			"description": "Lugar privilegiado para los SúperProfes",
+			"items": [],
+			"doors": ["pasillo", "secretaria", "cantina"]
+		}
+		
+		{
+			"id": "pasillo",
+			"name": "Pasillo de ENTI",
+			"description": "El pasillo prohibido",
+			"items": ["arbol_navidad"],
+			"doors": ["principal", "secretaria", "estudia", "cantina", "profes"]
+		}
 	],
 	
 	"items": [
@@ -22,6 +62,48 @@
 			"name": "Bicicleta mugrosa",
 			"description": "Algún alumno la abandonó",
 			"pickable": false
+		},
+		
+		{
+			"id": "buf",
+			"name": "Buf súcio",
+			"description": "Lleva ahí 3 años",
+			"pickable": true
+		},
+		
+		{
+			"id": "llaves",
+			"name": "Llaves de alguna casa",
+			"description": "Montón de llaves de alguien a quien no le importa entrar en su casa",
+			"pickable": true
+		},
+		
+		{
+			"id": "reloj",
+			"name": "Reloj de Xiaomi descargado",
+			"description": "Reloj digital multifunción descargado pero con pulsera azul turquesa",
+			"pickable": true
+		},
+		
+		{
+			"id": "gafas",
+			"name": "Gafas de Gucci mugrientas",
+			"description": "Se las dejaron y mira que son caras",
+			"pickable": true
+		},
+		
+		{
+			"id": "vaso_cafe",
+			"name": "Vaso de Café usao'",
+			"description": "Lo tiraron al suelo en vez de a la basura",
+			"pickable": true
+		},
+		
+		{
+			"id": "arbol_navidad",
+			"name": "Árbol de Navidad",
+			"description": "Árbol de navidad pagado por los delegados",
+			"pickable": false
 		}
 	],
 	
@@ -30,13 +112,43 @@
 			"id": "principal",
 			"name": "Puerta Principal de ENTI",
 			"description": "Puerta de entrada a ENTI",
-			"rooms": ["parking", "hall"]
+			"rooms": ["parking", "pasillo"]
 		},
 		
 		{
 			"id": "salida",
 			"name": "Puerta de Salida",
 			"description": "La salvación"
+		},
+		
+		{
+			"id": "secretaria",
+			"name": "Puerta de Secretaría",
+			"description": "Llevate lo que quieras menos bolígrafos"
+		},
+		
+		{
+			"id": "estudia",
+			"name": "Puerta de la Sala de Estudios",
+			"description": "Friki"
+		},
+		
+		{
+			"id": "cantina",
+			"name": "Puerta de la Cafetería",
+			"description": "Deja tu dinero para que las máquinas no te devuelvan el cambio"
+		},
+		
+		{
+			"id": "profes",
+			"name": "Puerta de la sala de Profesores",
+			"description": "Como entes... kgaste"
+		},
+		
+		{
+			"id": "pasillo",
+			"name": "Puerta al Pasillo",
+			"description": "Como te vean los profes estás suspendido"
 		}
 	]
 }
