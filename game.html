@@ -14,7 +14,13 @@
 		<script>
 			let game_data;
 			let current_room = 0;
-			let items_picked =[];
+			let items_picked = [];
+			let command = [];
+			
+			function space_detector() {
+				command = document.getElementById("commands").value.split(" ");
+				console.log(command);
+			}
 			
 			function game(data) {
 				game_data = data;
@@ -49,7 +55,7 @@
 				<form>
 					<div id="terminal"></div>
 					<input id="commands" type="text">
-					<input id="send_button" type="submit" value="Acción" >
+					<input id="send_button" type="submit" value="Acción" onclick="space_detector(); return false;">
 				</form>
 			</article>
 		</main>
