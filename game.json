@@ -6,7 +6,7 @@
 			"description": "El Parking que no puedes usar",
 			"items": ["piedra", "bicicleta"],
 			"doors": ["principal", "salida"]
-		}
+		},
 		
 		{
 			"id": "secretaria",
@@ -14,7 +14,7 @@
 			"description": "La guarderia de los objetos olvidados",
 			"items": ["buf", "llaves"],
 			"doors": ["pasillo", "cantina", "profes"]
-		}
+		},
 		
 		{
 			"id": "estudia",
@@ -22,7 +22,7 @@
 			"description": "La sala para los Empollones frikis de ENTI",
 			"items": ["reloj", "gafas"],
 			"doors": ["pasillo", "cantina"]
-		}
+		},
 		
 		{
 			"id": "cantina",
@@ -30,7 +30,7 @@
 			"description": "La Cafetería para los pijos",
 			"items": ["vaso_cafe"],
 			"doors": ["pasillo", "estudia", "secretaria", "profes"]
-		}
+		},
 		
 		{
 			"id": "profes",
@@ -38,7 +38,7 @@
 			"description": "Lugar privilegiado para los SúperProfes",
 			"items": [],
 			"doors": ["pasillo", "secretaria", "cantina"]
-		}
+		},
 		
 		{
 			"id": "pasillo",
