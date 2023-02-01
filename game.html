@@ -13,9 +13,8 @@
 		
 		<script>
 			let game_data;
-			
+		
 			let current_room = 0;
-						
 			let items_picked = [];
 			
 			function game(data) {
@@ -57,8 +56,46 @@
 				}
 			}	
 			
+			function getRoomNumber (room) {
+				for (let i = 0; i < game_data.rooms.length; i++) {
+					if (game_data.rooms[i].id == room) {
+						return i;
+					}
+					return -1;
+				}
+			}
+			
+			function getDoorNumber (door) {
+				for (let i = 0; i < game_data.rooms.length; i++) {
+					if (game_data.rooms[i].id == room) {
+						return i;
+					}
+					return -1;
+				}
+			}
+			
 			function parseInstruction (instruction) {
 				console.log("La instrucción ", instruction);
+				
+				switch (instruction[0]) {
+					case "ver":
+						
+					break;
+					
+					case "ir":
+						getDoorNumber() instruction[1]
+					
+						getRoomNumber(habitacion)
+					break;
+					
+					case "agarrar":
+					
+					break;
+					
+					default:
+						terminal_out("<p><strong>Error</strong>: "+instruction[0]+" commando no encontrado</p>");
+					
+				}
 			}
 			
 			function readAction() {
@@ -80,7 +117,10 @@
 				}
 			}
 			
-			fetch("https://denn853.github.io/game.json").then(response => response.json()).then(data => game(data), 2000);
+			fetch("https://denn853.github.io/game.json")
+					.then(response => response.json())
+					.then(data => game(data));
+					
 		</script>
 	</head>
 	
