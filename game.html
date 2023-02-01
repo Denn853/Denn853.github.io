@@ -30,7 +30,7 @@
 				
 				document.getElementById("terminal").innerHTML += "<p>Te encuentras en " + game_data.rooms[current_room].name + ", ¿Qué quieres hacer?";
 			}
-			fetch("https://denn853.github.io/game.json").then(response => response.json()).then(data => game(data));
+			fetch("https://denn853.github.io/game.json").then(response => response.json()).then(data => game(data), 2000);
 		</script>
 	</head>
 	
