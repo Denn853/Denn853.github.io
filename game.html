@@ -38,12 +38,12 @@
 				document.getElementById("commands").value = "";
 				console.log(command);
 				
-				if (space_detector.length == 0) {
+				if (command.length == 0) {
 					document.getElementById("terminal").innerHTML += "<p><strong>Error</strong>: Escribe una instrucción</p>";
 					return;
 				}
 				
-				if (space_detector.length == 1) {
+				if (command.length == 1) {
 					parseCommand(space_detector[0]);
 				}
 				else {
