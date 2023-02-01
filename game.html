@@ -13,7 +13,9 @@
 		
 		<script>
 			let game_data;
+			
 			let current_room = 0;
+						
 			let items_picked = [];
 			
 			function game(data) {
@@ -25,7 +27,11 @@
 			}
 			
 			function terminal_out (info) {
-				document.getElementById("terminal").innerHTML += info;
+				let terminal = document.getElementById("terminal");
+				
+				terminal.innerHTML += info;
+				
+				terminal.scrollTop = terminal.scrollHeight;
 			}
 			
 			function parseCommand (command) {
@@ -34,7 +40,17 @@
 				switch (command){
 					case "ver":
 						terminal_out("<p>"+game_data.rooms[current_room].description+"</p>");
-						break;
+					break;
+
+					case "ir":
+						let doors = "";
+						let doors_num = game_data.rooms[current_room].doors.length;
+						
+						for (let i = 0; i < doors_num; i ++) {
+							doors += game_data.rooms[current_room].doors[i]", ";
+						}
+						terminal_out("<p>Pueder ir a: "+doors+"</p>");
+					break;
 
 					default:
 						terminal_out("<p><strong>Error</strong>: "+command+" commando no encontrado</p>");
@@ -49,7 +65,7 @@
 				let instruction = document.getElementById("commands").value;
 				let instruction_trim = instruction.trim();
 				let data = instruction_trim.split(" ");
-				instruction = "";
+				//instruction = "";
 
 				if (data.length == 0 || instruction_trim == "") {
 					terminal_out("<p><strong>Error</strong>: escribe una instrucción</p>");
