@@ -17,12 +17,6 @@
 			let items_picked = [];
 			let command = [];
 			
-			function space_detector() {
-				command = document.getElementById("commands").value.split(" ");
-				document.getElementById("commands").value = "";
-				console.log(command);
-			}
-			
 			function game(data) {
 				game_data = data;
 				
@@ -30,6 +24,34 @@
 				
 				document.getElementById("terminal").innerHTML += "<p>Te encuentras en " + game_data.rooms[current_room].name + ", ¿Qué quieres hacer?";
 			}
+			
+			function parseCommand (command) {
+				console.log("El comando ", command);
+			}
+			
+			function parseInstruction (instruction) {
+				console.log("La instrucción ", instrucction);
+			}
+			
+			function space_detector() {
+				command = document.getElementById("commands").value.split(" ");
+				document.getElementById("commands").value = "";
+				console.log(command);
+				
+				if (space_detector.length == 0) {
+					document.getElementById("terminal").innerHTML += "<p><strong>Error</strong>: Escribe una instrucción</p>";
+					return;
+				}
+				
+				if (space_detector.length == 1) {
+					parseCommand(space_detector[0]);
+				}
+				else {
+					parseInstruction(space_detector);
+				}
+			}
+			
+			
 			fetch("https://denn853.github.io/game.json").then(response => response.json()).then(data => game(data), 2000);
 		</script>
 	</head>
