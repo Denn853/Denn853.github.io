@@ -34,7 +34,7 @@
 			}
 			
 			function space_detector() {
-				command = document.getElementById("commands").value.split(" ");
+				command = document.getElementById("commands").value.trim().split(" ");
 				document.getElementById("commands").value = "";
 				console.log(command);
 				
@@ -44,10 +44,10 @@
 				}
 				
 				if (command.length == 1) {
-					parseCommand(space_detector[0]);
+					parseCommand(command[0]);
 				}
 				else {
-					parseInstruction(space_detector);
+					parseInstruction(command);
 				}
 			}
 			
