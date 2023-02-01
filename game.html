@@ -13,50 +13,58 @@
 		
 		<script>
 			let game_data;
-
 			let current_room = 0;
 			let items_picked = [];
-
-			function game (data)
-			{
+			
+			function game(data) {
 				game_data = data;
 				
 				document.getElementById("terminal").innerHTML = "<p><strong>¡Bienvenidos a ENTIerrame!</strong> El juego de terror definitivo.</p>";
-				document.getElementById("terminal").innerHTML += "<p>Te encuentras en "+game_data.rooms[current_room].name+". ¿Qué quieres hacer?</p>";
+				
+				document.getElementById("terminal").innerHTML += "<p>Te encuentras en " + game_data.rooms[current_room].name + ", ¿Qué quieres hacer?";
 			}
-
-			function parseCommand (command)
-			{
+			
+			function terminal_out (info) {
+				document.getElementById("terminal").innerHTML += info;
+			}
+			
+			function parseCommand (command) {
 				console.log("El comando ", command);
+			
+				switch (command){
+					case "ver":
+						terminal_out("<p>"game_data.rooms[current_room].description"</p>");
+						break;
+
+					default:
+						terminal_out("<p><strong>Error</strong>: "+command+" commando no encontrado</p>");
+				}
+			}	
+			
+			function parseInstruction (instruction) {
+				console.log("La instrucción ", instruction);
 			}
-
-			function parseInstruction (instruction)
-			{
-
-				console.log("La instrucción", instruction);
-			}
-
-			function readAction ()
-			{
+			
+			function readAction() {
 				let instruction = document.getElementById("commands").value;
+				let instruction_trim = instruction.trim();
+				let data = instruction_trim.split(" ");
+				instruction = "";
 
-				let data = instruction.trim().split(" ");
-
-				if (data.length == 0){
-					document.getElementById("terminal").innerHTML += "<p><strong>Error</strong>: escribe una instrucción</p>";
+				if (data.length == 0 || instruction_trim == "") {
+					terminal_out("<p><strong>Error</strong>: escribe una instrucción</p>");
 					return;
 				}
 
-				if (data.length == 1){
+				if (data.length == 1) {
 					parseCommand(data[0]);
 				}
-				else{
+				else {
 					parseInstruction(data);
 				}
-
 			}
-
-			fetch("https://denn853.github.io/game.json").then(response => response.json()).then(data => game(data));
+			
+			fetch("https://denn853.github.io/game.json").then(response => response.json()).then(data => game(data), 2000);
 		</script>
 	</head>
 	
