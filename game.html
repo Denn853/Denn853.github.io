@@ -91,13 +91,20 @@
 
 						console.log("Door Num: ",door_num);
 
-						let room_num = getRoomNumber(game_data.doors[door_num].rooms[0]);
+						let room_num = findRoomNumber(game_data.doors[door_number].rooms[0]);
+						/*let next_room_name = "";
+						
+						if (room1_id == current_room) {
+							current_room = findRoomNumber(game_data.doors[door_num].rooms[1]);
+						}*/
+						
+						
 						if (room_num < 0){
 							console.log("Habitación errónea");
 							return;
-						}
+						} 
 
-						console.log("Room Num: ", room_num);
+						console.log("Room Num: ", room_num); 
 
 						if (room_num == current_room){
 							current_room = getRoomNumber(game_data.doors[door_num].rooms[1]);
@@ -105,7 +112,11 @@
 						else{
 							current_room = room_num;
 						}
-
+						
+						/* next_room_name = game_data.rooms[current_room].name
+						
+						terminalOut("<p>Cambiando de habitación a " + next_room_name + "</p>");
+						*/
 						break;
 					
 					case "agarrar":
