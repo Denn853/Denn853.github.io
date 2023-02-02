@@ -15,7 +15,9 @@
 			let game_data;
 			
 			let current_room = 0;
+			
 			let items_picked = [];
+			
 			let command = [];
 			
 			
@@ -105,11 +107,10 @@
 						let items_num = game_data.rooms[current_room].items.length;
 						
 						for (let i = 0; i < items_num; i++) {
-							items += game_data.rooms[current_room].items[i] + " ";
+							items += data.rooms[current_room].items[i] + " ";
 						}
-						
-						terminalOut("<p>Los items en la sala son: " + items + "</p>");
 					
+						terminalOut("<p>Los items en la sala son: " + items + "</p>");
 						break;
 						
 					default:
@@ -161,12 +162,12 @@
 						break;
 						
 					case 'coger':
-						
+					
 						let item_pick = instruction[1];
 						let item_num = findItemNumber(instruction[1]);
 						
 						if (item_num < 0) {
-							console.log("Item errónea");
+							console.log("Item erróneo");
 							return;
 						}
 						
@@ -187,8 +188,7 @@
 								break;
 							}
 						}
-						
-						//game_data.rooms[current_room].items.splice(item_remove, 1);
+						game_data.rooms[current_room].items.splice(item_remove, 1);
 						
 						terminalOut("<p>El objeto<strong> " + instruction[1] + "</strong> ha sido añadido a tu inventario</p>");
 					
