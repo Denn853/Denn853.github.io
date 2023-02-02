@@ -107,7 +107,7 @@
 						let items_num = game_data.rooms[current_room].items.length;
 						
 						for (let i = 0; i < items_num; i++) {
-							items += data.rooms[current_room].items[i] + " ";
+							items += game_data.rooms[current_room].items[i] + " ";
 						}
 					
 						terminalOut("<p>Los items en la sala son: " + items + "</p>");
