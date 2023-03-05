@@ -22,3 +22,12 @@ Aquí almacenaremos la página web estática de la asignatura así como algunos 
 - [x] Aprender MySQL
 
 ## ENTIérrame (Ejercicio Final M04 UF1)
+- ¿Qué es HTML?
+- ¿Qué es CSS?
+- ¿Qué es JavaScript?
+- ¿Qué es el formato Markdown?
+- ¿Qué es JSON?
+- ¿Cómo se convierte un objeto a JSON?
+- ¿Cómo se convierte un JSON a un objeto?
+- Completa el ejercicio:
+- - DFGD
