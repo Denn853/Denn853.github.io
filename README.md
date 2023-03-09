@@ -32,7 +32,7 @@ Aquí almacenaremos la página web estática de la asignatura así como algunos 
   - **JavaScript** es un lenguaje de programación que se utiliza para hacer paginas web interactivas, de esta manera se mejora la experiencia del usuario, JavaScript se implementa utilizando la etiqueta ``<script> </script>`` y dentro de esta etiqueta todo el código necesario para tener nuestro js.
 
 - ¿Qué es el formato Markdown?
-  - **Markdown** es un lenguaje que convierte el lenguaje HTML en un lenguaje más sencillo de usar ya que solo usamos símbolos del teclado, ya sean doble * **para la negrita** o un doble = ==para subrayado==, de esta manera Markdown te permite darle un formato básico al texto
+  - **Markdown** es un lenguaje que convierte el lenguaje HTML en un lenguaje más sencillo de usar ya que solo usamos símbolos del teclado, ya sean doble * **para la negrita** o uno * *para subrayado*, de esta manera Markdown te permite darle un formato básico al texto
 
 - ¿Qué es JSON?
   - El formato **JSON** es un formato utilizado como alternativa al XML para la transferencia de datos estructurados entre un servidor web y una aplicación web, como Twitter o Facebook.
