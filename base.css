@@ -46,6 +46,50 @@ aside {
 	flex-basis: 25%;
 }
 
+footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 40px;
+	background: #90FFD5;
+}
+
+footer p {
+	color: #000000;
+}
+
+#contact-footer {
+	list-style: none;
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+
+#instagram-img {
+    background: url("imgs/Instagram-Black-Icon.png") no-repeat;
+    display: inline-block;
+}
+
+#instagram-img:hover {
+	background: url("imgs/Instagram-Icon.png") no-repeat;
+}
+
+#twitter-img {
+    background: url("imgs/Instagram-Black-Icon.png") no-repeat;
+    display: inline-block;
+}
+
+#twitter-img:hover {
+	background: url("imgs/Instagram-Icon.png") no-repeat;
+}
+
+#linkedin-img {
+    background: url("imgs/Instagram-Black-Icon.png") no-repeat;
+    display: inline-block;
+}
+
+#linkedin-img:hover {
+	background: url("imgs/Instagram-Icon.png") no-repeat;
+}
 
 @media (max-width: 600px) {
 	main{
