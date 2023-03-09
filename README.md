@@ -30,4 +30,4 @@ Aquí almacenaremos la página web estática de la asignatura así como algunos 
 - ¿Cómo se convierte un objeto a JSON?
 - ¿Cómo se convierte un JSON a un objeto?
 - Completa el ejercicio:
-- - DFGD
+  - DFGD
