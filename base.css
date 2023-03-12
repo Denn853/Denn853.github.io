@@ -1,94 +1,181 @@
-header, h1, nav, ul, main, article, aside, footer {
+html, body {
+	font-family: 'JetBrains Mono', monospace;
+	
+	background-color: #EEFFF4;
+	
 	padding: 0;
 	margin: 0;
-	border: 1px solid black;
 }
 
-html {
-	font-family: 'JetBrains Mono', monospace;
+header, h1, h2, nav, ul, main, article, aside, footer {
+	#border: 1px solid black;
 }
 
 header, main {
 	display: flex;
-}
-
-h1 {
-	flex-basis: 50%;
-}
-
-nav {
-	flex-basis: 50%;
-}
-
-ul {
-	list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0 30px;
-    justify-content: space-between;
-	flex-wrap: wrap;
-}
-
-li {
-	list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0 30px;
-    justify-content: space-between;
+	justify-content: space-between;
 	align-items: center;
 }
 
-article {
-	flex-basis: 75%;
+header, nav{
+	background-color: #518B66;
+	color: #DFFFEA;
+	
+	text-decoration: none;
+	
+	height: 5%;
+	width: 100%;
 }
 
-aside {
-	flex-basis: 25%;
+#title {
+	flex-basis: 30%;
+	
+	position: relative;
+}
+
+h1 {
+	text-align: center;
+	font-size: 55px;
+	
+	margin: 2%;
+}
+
+nav {
+	flex-basis: 60%;
+	width: 100%;
+}
+
+#main-menu {
+	list-style: none; 
+	
+	padding: 0;
+	margin: 0 5%;
+	
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;	
+	align-items: center;
+	align-content: center;
+}
+
+#main-menu li {
+	padding: 10px;
+	margin: 0 3%;
+}
+
+#main-menu a {
+	text-decoration: none;
+	
+	color: #DFFFEA;
+	font-size: 32px;
+}
+
+#main-menu li:hover {
+	background-color: #3C6F4F;
+	border-radius: 15px;
+}
+
+main section {
+	margin: 5% 0;
+	
+	width: 100%;
+}
+
+#about-me h2 {
+	text-align: center;
+	font-size: 60px;
+}
+
+#photo {
+	display: flex;
+	
+	align-items: center;	
+	flex-direction: column;
+}
+
+#photo img {
+	width: 350px;
+	height: 350px;
+	border-radius: 15%;
+	margin: 30px;
+}
+
+#separator {
+	width: 50%;
+	height: 5px;
+
+	background-color: #518B66;
+	
+	margin: 25px 0 10px 0;
+}
+
+#photo p {
+	font-size: 40px;
+	
+	margin: 1%;
+}
+
+#body-text p {
+	margin: 3% 10%;
+	
+	text-align: justify;
+	
+	font-size: 32px;
 }
 
 footer {
 	display: flex;
 	justify-content: space-between;
-	padding: 10px 40px;
-	background: #90FFD5;
+	
+	background-color: #518B66;
+	
+	height: 100px;
 }
 
-footer p {
-	color: #000000;
+footer p{
+	margin: 15px 0 15px 5%;
+	
+	color: #DFFFEA;
+	font-size: 32px;
+	
+	display: flex;
+	align-items: center;
 }
 
 #contact-footer {
 	list-style: none;
-	display: flex;
+	
+	padding: 0 5%;
+	margin: 0 5% 0 0;
+	
+	display: flex;	
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+#contact-footer li {
+	list-style: none;
+  
 	padding: 0;
-	margin: 0;
+    margin: 0 100px;
 }
 
-#instagram-img {
-    background: url("imgs/Instagram-Black-Icon.png") no-repeat;
-    display: inline-block;
+.container {
+	position: relative;
 }
 
-#instagram-img:hover {
-	background: url("imgs/Instagram-Icon.png") no-repeat;
+.container img {
+	position: absolute;
+	transition: opacity .2s ease-in-out;
+	height: 65px;
+	width: 65px;
+	
+	margin: -30px 5px 5px -30px;
 }
 
-#twitter-img {
-    background: url("imgs/Instagram-Black-Icon.png") no-repeat;
-    display: inline-block;
-}
-
-#twitter-img:hover {
-	background: url("imgs/Instagram-Icon.png") no-repeat;
-}
-
-#linkedin-img {
-    background: url("imgs/Instagram-Black-Icon.png") no-repeat;
-    display: inline-block;
-}
-
-#linkedin-img:hover {
-	background: url("imgs/Instagram-Icon.png") no-repeat;
+.container img.top:hover {
+  opacity: 0;
 }
 
 @media (max-width: 600px) {
