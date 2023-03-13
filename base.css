@@ -30,7 +30,8 @@ header, nav{
 #title {
 	flex-basis: 30%;
 	
-	position: relative;
+	display: flex;
+	flex-direction: column;
 }
 
 h1 {
@@ -38,6 +39,10 @@ h1 {
 	font-size: 55px;
 	
 	margin: 2%;
+}
+
+h2 {
+	text-align: center;
 }
 
 nav {
