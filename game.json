@@ -54,9 +54,9 @@
 			"description": "El pasillo prohibido",
 			"items": ["arbol_navidad"],
 			"doors": ["principal", "secretaria", "estudia", "cantina", "profes"]
-		}
+		},
 		
-			{
+		{
             "id": "salida",
             "name": "Salida",
             "description": "Salida del infierno, lamentablemente se encuentra en obras :/",
@@ -134,13 +134,15 @@
 			"name": "Cerveza de Dimas",
 			"description": "Cerveza de Dimas abierta olvidada en la nevera de los profes, pero suculentamente baboseada",
 			"pickable": true
-		}
+		},
+		
 		{
 			"id": "traje_furry",
 			"name": "Traje Furry del Richard",
 			"description": "A Richard en secreto le gusta vertirse de Furro y bailarle al Edu... de forma.. sexy¿",
 			"pickable": true
-		}
+		},
+		
 		{
 			"id": "arbol_navidad",
 			"name": "Árbol de Navidad",
