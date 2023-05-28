@@ -62,7 +62,7 @@
             "description": "Salida del infierno, lamentablemente se encuentra en obras :/",
             "items": [""],
             "doors": ["salida"]
-        },
+        }
 	],
 	
 	"items": [
