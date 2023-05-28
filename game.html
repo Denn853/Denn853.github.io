@@ -33,23 +33,35 @@
 		</header>
 		
 		<main>
-			<article>
-				<h2>Juegaco</h2>
+			<section>
+				<article id="game">
+					<h2>Juegaco</h2>
+				
+					<form>
+						<div id="terminal"></div>
+						
+						<section id="input">
+							<input type="text" name="commands" id="commands"/>
+							<input type="submit" value="Ejecutar" id="submit-command" onclick="executeCommand(); return false;"/>
+						</section>
+					</form>
+				</article>
+			</section>	
 			
-				<form>
-					<div id="terminal"></div>
-					<input type="text" name="commands" id="commands"/>
-					<input type="submit" value="Ejecutar" id="submit-command" onclick="executeCommand(); return false;"/>
-				</form>
-			</article>
+			<section id="separator">
+				<p></p>
+			</section>
 			
-			<aside>
-				<h2>Instructions:</h2>
-				<p>Ver / Ver + OBJETO</p>
-				<p>Ir / Ir + PUERTA</p>
-				<p>Coger / Coger + OBJETO</p>
-				<p>Inventario</p>
-			</aside>
+			<section id="instructions">
+				<h2>Comandos:</h2>
+				
+				<aside>
+					<p>Ver / Ver + OBJETO</p>
+					<p>Ir / Ir + PUERTA</p>
+					<p>Coger / Coger + OBJETO</p>
+					<p>Inventario</p>
+				</aside>
+			</section>
 		</main>
 		
 		<footer>

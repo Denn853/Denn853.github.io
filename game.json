@@ -9,7 +9,7 @@
 		},
 		
 		{
-		"id": "principal",
+			"id": "principal",
             "name": "Entrada de ENTI",
             "description": "Esta zona está re-contra vigilada, ten cuidado!!",
             "items": ["detector"],
@@ -61,7 +61,7 @@
             "name": "Salida",
             "description": "Salida del infierno, lamentablemente se encuentra en obras :/",
             "items": [""],
-            "doors": ["salida"]
+            "doors": ["parking"]
         }
 	],
 	
