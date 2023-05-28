@@ -163,49 +163,49 @@
 			"id": "secretaria",
 			"name": "Puerta de Secretaría",
 			"description": "Llevate lo que quieras menos bolígrafos",
-			"rooms": ["principal", "profes", "pasillo", "secretaria"]
+			"rooms": ["secretaria", "principal", "profes", "pasillo"]
 		},
 	
 		{
 			"id": "estudia",
 			"name": "Puerta de la Sala de Estudios",
 			"description": "Putos Frikis Empollones",
-			"rooms": ["pasillo", "cantina", "estudia"]
+			"rooms": ["estudia""pasillo", "cantina"]
 		},
 		
 		{
 			"id": "cantina",
 			"name": "Puerta de la Cafetería",
 			"description": "Deja tu dinero para que las máquinas no te devuelvan el cambio, ni te den el producto xD",
-			"rooms": ["pasillo", "estudia", "profes", "cantina"]
+			"rooms": ["cantina","pasillo", "estudia", "profes"]
 		},
 		
 		{
 			"id": "profes",
 			"name": "Puerta de la sala de Profesores",
 			"description": "Como entes... kgaste",
-			"rooms": ["pasillo", "secretaria", "cantina", "profes"]
+			"rooms": ["profes", "pasillo", "secretaria", "cantina"]
 		},
 		
 		{
 			"id": "pasillo",
 			"name": "Puerta al Pasillo",
 			"description": "Como te vean los profes estás suspendido",
-			"rooms": ["principal", "secretaria", "estudia", "cantina", "profes", "pasillo"]
+			"rooms": ["pasillo", "principal", "secretaria", "estudia", "cantina", "profes"]
 		},
 		
 		{
 			"id": "principal",
 			"name": "Puerta Principal de ENTI",
 			"description": "Puerta de entrada a ENTI",
-			"rooms": ["parking", "pasillo", "principal"]
+			"rooms": ["principal", "parking", "pasillo"]
 		},
 		
 		{
 			"id": "salida",
 			"name": "Puerta de Salida",
 			"description": "La salvación",
-			"rooms": ["parking", "salida"]
+			"rooms": ["salida", "parking"]
 		}
 	]
 }
