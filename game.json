@@ -170,7 +170,7 @@
 			"id": "estudia",
 			"name": "Puerta de la Sala de Estudios",
 			"description": "Putos Frikis Empollones",
-			"rooms": ["estudia""pasillo", "cantina"]
+			"rooms": ["estudia", "pasillo", "cantina"]
 		},
 		
 		{
