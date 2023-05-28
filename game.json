@@ -9,11 +9,19 @@
 		},
 		
 		{
+		"id": "principal",
+            "name": "Entrada de ENTI",
+            "description": "Esta zona está re-contra vigilada, ten cuidado!!",
+            "items": ["detector"],
+            "doors": ["parking", "pasillo", "secretaria"]
+		},
+		
+		{
 			"id": "secretaria",
 			"name": "Secretaría de ENTI",
 			"description": "La guarderia de los objetos olvidados",
 			"items": ["buf", "llaves"],
-			"doors": ["pasillo", "cantina", "profes"]
+			"doors": ["principal", "profes", "pasillo"]
 		},
 		
 		{
@@ -28,15 +36,15 @@
 			"id": "cantina",
 			"name": "Cantina de ENTI",
 			"description": "La Cafetería para los pijos",
-			"items": ["vaso_cafe"],
-			"doors": ["pasillo", "estudia", "secretaria", "profes"]
+			"items": ["vaso_cafe", "maquina_comida"],
+			"doors": ["pasillo", "estudia", "profes"]
 		},
 		
 		{
 			"id": "profes",
 			"name": "Sala de Profesores de ENTI",
 			"description": "Lugar privilegiado para los SúperProfes",
-			"items": [],
+			"items": ["cerveza_abierta", "traje_furry"],
 			"doors": ["pasillo", "secretaria", "cantina"]
 		},
 		
@@ -47,6 +55,14 @@
 			"items": ["arbol_navidad"],
 			"doors": ["principal", "secretaria", "estudia", "cantina", "profes"]
 		}
+		
+			{
+            "id": "salida",
+            "name": "Salida",
+            "description": "Salida del infierno, lamentablemente se encuentra en obras :/",
+            "items": [""],
+            "doors": ["salida"]
+        },
 	],
 	
 	"items": [
@@ -65,30 +81,37 @@
 		},
 		
 		{
+            "id": "detector",
+            "name": "Detector COVID",
+            "description": "Detector de COVID que en teoría detecta la temperatura corporal",
+            "pickable": false
+        },
+		
+		{
 			"id": "buf",
 			"name": "Buf súcio",
-			"description": "Lleva ahí 3 años",
+			"description": "Buf que lleva en objetos pedidos 3 años",
 			"pickable": true
 		},
 		
 		{
 			"id": "llaves",
 			"name": "Llaves de alguna casa",
-			"description": "Montón de llaves de alguien a quien no le importa entrar en su casa",
+			"description": "Montón de llaves de alguien a quien no le importa que entren y o entrar en su casa",
 			"pickable": true
 		},
 		
 		{
 			"id": "reloj",
-			"name": "Reloj de Xiaomi descargado",
-			"description": "Reloj digital multifunción descargado pero con pulsera azul turquesa",
+			"name": "Reloj Xiaomi descargado",
+			"description": "Reloj digital multifunción descargado pero con pulsera azul turquesa to wapa :)",
 			"pickable": true
 		},
 		
 		{
 			"id": "gafas",
 			"name": "Gafas de Gucci mugrientas",
-			"description": "Se las dejaron y mira que son caras",
+			"description": "Se las dejaron... y mira que son caras",
 			"pickable": true
 		},
 		
@@ -99,6 +122,25 @@
 			"pickable": true
 		},
 		
+		{
+			"id": "maquina_comida",
+			"name": "Máquina de Comida",
+			"description": "Máquina de comida que a veces funciona y a veces te roba :D",
+			"pickable": false
+		},
+		
+		{
+			"id": "cerveza_abierta",
+			"name": "Cerveza de Dimas",
+			"description": "Cerveza de Dimas abierta olvidada en la nevera de los profes, pero suculentamente baboseada",
+			"pickable": true
+		}
+		{
+			"id": "traje_furry",
+			"name": "Traje Furry del Richard",
+			"description": "A Richard en secreto le gusta vertirse de Furro y bailarle al Edu... de forma.. sexy¿",
+			"pickable": true
+		}
 		{
 			"id": "arbol_navidad",
 			"name": "Árbol de Navidad",
@@ -112,43 +154,49 @@
 			"id": "principal",
 			"name": "Puerta Principal de ENTI",
 			"description": "Puerta de entrada a ENTI",
-			"rooms": ["parking", "pasillo"]
+			"rooms": ["parking", "pasillo", "principal"]
 		},
 		
 		{
 			"id": "salida",
 			"name": "Puerta de Salida",
-			"description": "La salvación"
+			"description": "La salvación",
+			"rooms": ["parking", "salida"]
 		},
 		
 		{
 			"id": "secretaria",
 			"name": "Puerta de Secretaría",
-			"description": "Llevate lo que quieras menos bolígrafos"
+			"description": "Llevate lo que quieras menos bolígrafos",
+			"rooms": ["principal", "profes", "pasillo", "secretaria"]
 		},
 		
 		{
 			"id": "estudia",
 			"name": "Puerta de la Sala de Estudios",
-			"description": "Friki"
+			"description": "Putos Frikis Empollones",
+			"rooms": ["pasillo", "cantina", "estudia"]
 		},
 		
 		{
 			"id": "cantina",
 			"name": "Puerta de la Cafetería",
-			"description": "Deja tu dinero para que las máquinas no te devuelvan el cambio"
+			"description": "Deja tu dinero para que las máquinas no te devuelvan el cambio, ni te den el producto xD",
+			"rooms": ["pasillo", "estudia", "profes", "cantina"]
 		},
 		
 		{
 			"id": "profes",
 			"name": "Puerta de la sala de Profesores",
-			"description": "Como entes... kgaste"
+			"description": "Como entes... kgaste",
+			"rooms": ["pasillo", "secretaria", "cantina", "profes"]
 		},
 		
 		{
 			"id": "pasillo",
 			"name": "Puerta al Pasillo",
-			"description": "Como te vean los profes estás suspendido"
+			"description": "Como te vean los profes estás suspendido",
+			"rooms": ["principal", "secretaria", "estudia", "cantina", "profes", "pasillo"]
 		}
 	]
 }
