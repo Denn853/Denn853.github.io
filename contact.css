@@ -1,60 +1,22 @@
-
-html{
-	font-family: 'JetBrains Mono', monospace;
-}
-
-header, main, article, aside, footer{
-padding:0;
-margin:0;
-border:1px solid black;
-
-}
-
-header, nav, main{
+article {
 	display: flex;
+	min-height: 750px;
+	min-width: 300px;
+	align-items: center;
+	margin: 1% 2% 1% 2%;
+	justify-content: center;
 }
 
-h1{
-	padding:30px;
-	margin:10px;
-	border:1px solid black;
-
-}
-
-article{
-	flex-basis:100%
-}
-
-aside{
-	flex-basis:25%
-	
-  }
- __
- 
-body, html {
-  height: 100%;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-#bg-img {
-  background-image: url("https://wallpapercave.com/wp/wp2661684.jpg");
-  min-height: 750px;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  position: relative;
-}
-
-
-#container {
-  position: absolute;
-  right: 0;
-  margin: 20px;
+form {
   max-width: 300px;
-  padding: 16px;
-  background-color: white;
+  background-color: #518B66;
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+}
+
+form h2 {
+	color: black;
 }
 
 
@@ -62,38 +24,27 @@ input[type=text], select, textarea {
   width: 100%;
   padding: 12px; 
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 10px;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
-  resize: vertical
+  resize: vertical;
 }
 
 input[type=submit] {
-  background-color: #2980B9;
-  color: white;
+  background-color: #DFFFEA;
+  color: black;
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
 input[type=submit]:hover {
-  background-color: #5499C7;
+  background-color: #D1EBDA;
+    color: black
 }
 
-#container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
   ul {
     list-style-type: none;
-}
-
-figure {
-  display: block;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 0px;
 }
