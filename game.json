@@ -5,7 +5,7 @@
 			"name": "Parking de ENTI",
 			"description": "El Parking que no puedes usar",
 			"items": ["piedra", "bicicleta"],
-			"doors": ["pasillo", "salida"]
+			"doors": ["principal", "salida"]
 		},
 				
 		{
@@ -53,7 +53,7 @@
             "name": "Entrada de ENTI",
             "description": "Esta zona está re-contra vigilada, ten cuidado!!",
             "items": ["detector"],
-            "doors": ["parking", "pasillo", "secretaria"]
+            "doors": ["pasillo", "secretaria"]
 		},
 		
 		{
@@ -156,7 +156,7 @@
 			"id": "parking",
 			"name": "Parking de ENTI",
 			"description": "Hay coches que no son ni de ENTI",
-			"rooms": ["salida", "principal"]
+			"rooms": ["parking", "salida", "principal"]
 		},
 	
 		{
