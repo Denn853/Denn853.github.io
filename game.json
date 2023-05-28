@@ -7,15 +7,7 @@
 			"items": ["piedra", "bicicleta"],
 			"doors": ["principal", "salida"]
 		},
-		
-		{
-			"id": "principal",
-            "name": "Entrada de ENTI",
-            "description": "Esta zona está re-contra vigilada, ten cuidado!!",
-            "items": ["detector"],
-            "doors": ["parking", "pasillo", "secretaria"]
-		},
-		
+				
 		{
 			"id": "secretaria",
 			"name": "Secretaría de ENTI",
@@ -54,6 +46,14 @@
 			"description": "El pasillo prohibido",
 			"items": ["arbol_navidad"],
 			"doors": ["principal", "secretaria", "estudia", "cantina", "profes"]
+		},
+		
+				{
+			"id": "principal",
+            "name": "Entrada de ENTI",
+            "description": "Esta zona está re-contra vigilada, ten cuidado!!",
+            "items": ["detector"],
+            "doors": ["parking", "pasillo", "secretaria"]
 		},
 		
 		{
@@ -153,26 +153,19 @@
 	
 	"doors": [
 		{
-			"id": "principal",
-			"name": "Puerta Principal de ENTI",
-			"description": "Puerta de entrada a ENTI",
-			"rooms": ["parking", "pasillo", "principal"]
+			"id": "parking",
+			"name": "Parking de ENTI",
+			"description": "Hay coches que no son ni de ENTI",
+			"rooms": ["salida", "principal"]
 		},
-		
-		{
-			"id": "salida",
-			"name": "Puerta de Salida",
-			"description": "La salvación",
-			"rooms": ["parking", "salida"]
-		},
-		
+	
 		{
 			"id": "secretaria",
 			"name": "Puerta de Secretaría",
 			"description": "Llevate lo que quieras menos bolígrafos",
 			"rooms": ["principal", "profes", "pasillo", "secretaria"]
 		},
-		
+	
 		{
 			"id": "estudia",
 			"name": "Puerta de la Sala de Estudios",
@@ -199,6 +192,20 @@
 			"name": "Puerta al Pasillo",
 			"description": "Como te vean los profes estás suspendido",
 			"rooms": ["principal", "secretaria", "estudia", "cantina", "profes", "pasillo"]
+		},
+		
+		{
+			"id": "principal",
+			"name": "Puerta Principal de ENTI",
+			"description": "Puerta de entrada a ENTI",
+			"rooms": ["parking", "pasillo", "principal"]
+		},
+		
+		{
+			"id": "salida",
+			"name": "Puerta de Salida",
+			"description": "La salvación",
+			"rooms": ["parking", "salida"]
 		}
 	]
 }
