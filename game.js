@@ -174,7 +174,7 @@ function parseInstruction (instruction) {
 					console.log(game_data.items[item_num]);
 
 					if (game_data.items[item_num].pickable == false) {
-						terminalOut("<p>El objeto<strong> " + item.name + "</strong> no puede ser cogido</p>");
+						terminalOut("<p>El objeto<strong> " + item.[name] + "</strong> no puede ser cogido</p>");
 						return;
 					}
 					
@@ -184,7 +184,7 @@ function parseInstruction (instruction) {
 						}
 					});
 					
-					terminalOut("<p>El objeto<strong> " + item.name + "</strong> ha sido añadido a tu inventario</p>");
+					terminalOut("<p>El objeto<strong> " + item.[name] + "</strong> ha sido añadido a tu inventario</p>");
 					return;
 				}
 			});
