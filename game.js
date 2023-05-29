@@ -197,11 +197,10 @@ function parseInstruction (instruction) {
 				if (item_inventory_num > 0) {
 					terminalOut("<p>El objeto<strong> " + instruction[1] + "</strong> no se encuentra en tu inventario</p>");
 					return;
-					
-					if (item_inventory_num < 0) {
+				}
+				else {
 					terminalOut("<p>El objeto<strong> " + instruction[1] + "</strong> no se encuentra en tu inventario</p>");
 					return;
-				}
 				}
 			
 				let item_inventory_description = game_data.items[item_inventory_num].description;
