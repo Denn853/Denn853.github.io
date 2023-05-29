@@ -164,7 +164,7 @@ function parseInstruction (instruction) {
 				if (item == instruction[1]) {
 				
 					let item_num = game_data.rooms[current_room].items.indexOf(item);
-					let item_name = game_data.items[item_number].name;
+					let item_name = game_data.items[item_num].name;
 										
 					if (item_num < 0) {
 						console.log("Error al borrar el item de la habitación");
