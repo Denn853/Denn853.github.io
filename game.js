@@ -175,17 +175,17 @@ function parseInstruction (instruction) {
 					console.log(game_data.items[item_num]);
 
 					if (game_data.items[item_num].pickable == false) {
-						terminalOut("<p>El objeto<strong> " + item_name + "</strong> no puede ser cogido</p>");
+						terminalOut("<p>El objeto<strong> " + item + "</strong> no puede ser cogido</p>");
 						return;
 					}
 					
 					game_data.rooms[current_room].items.forEach(item => {
-						if (item_name == instruction[1]) {
+						if (item == instruction[1]) {
 							items_picked.push(game_data.rooms[current_room].items.splice(item_num, 1));
 						}
 					});
 					
-					terminalOut("<p>El objeto<strong> " + item_name + "</strong> ha sido añadido a tu inventario</p>");
+					terminalOut("<p>El objeto<strong> " + item + "</strong> ha sido añadido a tu inventario</p>");
 					return;
 				}
 			});
