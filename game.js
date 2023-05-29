@@ -180,7 +180,7 @@ function parseInstruction (instruction) {
 					}
 					
 					game_data.rooms[current_room].items.forEach(item => {
-						if (item == instruction[1]) {
+						if (item_name == instruction[1]) {
 							items_picked.push(game_data.rooms[current_room].items.splice(item_num, 1));
 						}
 					});
