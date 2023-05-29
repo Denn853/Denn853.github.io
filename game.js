@@ -164,6 +164,7 @@ function parseInstruction (instruction) {
 				if (item == instruction[1]) {
 				
 					let item_num = game_data.rooms[current_room].items.indexOf(item);
+					let item_name = game_data.items[item_number].name;
 										
 					if (item_num < 0) {
 						console.log("Error al borrar el item de la habitación");
@@ -174,7 +175,7 @@ function parseInstruction (instruction) {
 					console.log(game_data.items[item_num]);
 
 					if (game_data.items[item_num].pickable == false) {
-						terminalOut("<p>El objeto<strong> " + item + "</strong> no puede ser cogido</p>");
+						terminalOut("<p>El objeto<strong> " + item_name + "</strong> no puede ser cogido</p>");
 						return;
 					}
 					
@@ -184,7 +185,7 @@ function parseInstruction (instruction) {
 						}
 					});
 					
-					terminalOut("<p>El objeto<strong> " + item + "</strong> ha sido añadido a tu inventario</p>");
+					terminalOut("<p>El objeto<strong> " + item_name + "</strong> ha sido añadido a tu inventario</p>");
 					return;
 				}
 			});
